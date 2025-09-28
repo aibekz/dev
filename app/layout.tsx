@@ -1,16 +1,7 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Source_Code_Pro } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
+import { Source_Code_Pro } from "next/font/google";
 import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 const sourceCodePro = Source_Code_Pro({
   variable: "--font-source-code-pro",
@@ -30,9 +21,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${sourceCodePro.variable} antialiased`}
+        className={`${sourceCodePro.variable} antialiased`}
       >
         {children}
+        <Analytics />
       </body>
     </html>
   );
