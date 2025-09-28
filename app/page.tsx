@@ -17,9 +17,12 @@ export default function Home() {
 ╚══════════════════════════════════════════════════════════════════════════╝`}
           </pre>
           <div className="border-b border-[#333] pb-4">
-            <h1 className="terminal-yellow text-2xl font-bold mb-2">
-              {'<'} <span className="terminal-green">DevCoder</span> {'/>'}
-            </h1>
+            <div className="logo-header mb-2 flex items-center">
+                <img src="/favicon.svg" alt="DevCoder Logo" className="inline-block w-6 h-6 mr-2" />
+            <span className="terminal-green text-3xl font-bold">
+              DevCoder
+            </span>
+            </div>
             <p className="terminal-green">
               Software Engineer | Problem Solver | Code Enthusiast
             </p>
