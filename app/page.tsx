@@ -31,7 +31,7 @@ export default function Home() {
             <div className="code-block">
               <p className="mb-3">
                 Welcome to my digital workspace! I'm a passionate software engineer
-                who loves solving complex problems and building innovative solutions.
+                based in the USA who loves solving complex problems and building innovative solutions.
               </p>
               <p className="mb-3">
                 <span className="highlight terminal-blue">Specialties:</span> Full-stack development,
@@ -120,8 +120,8 @@ export default function Home() {
               <div className="space-y-2">
                 <p>
                   <span className="terminal-blue">Email:</span> 
-                  <a href="mailto:hello@devcoder.me" className="ml-2 hover:text-yellow-400">
-                    hello@devcoder.me
+                  <a href="mailto:devcoder.me@gmail.com" className="ml-2 hover:text-yellow-400">
+                    devcoder.me@gmail.com
                   </a>
                 </p>
               </div>
