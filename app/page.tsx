@@ -4,14 +4,41 @@ export default function Home() {
       <div className="max-w-5xl mx-auto p-6 lg:p-8">
         <header className="mb-12">
           <div className="border-b border-[#333] pb-6">
-            <div className="flex items-center gap-4 mb-4">
+            <div className="flex items-center gap-4 mb-6">
               <div>
+                <h1 className="terminal-green text-5xl font-bold mb-2">{"<"}</h1>
                 <h1 className="terminal-green text-2xl lg:text-3xl font-bold mb-2">
-                 {"<"} devcoder{"/>"}
+                  devcoder
                 </h1>
-                <p className="terminal-green text-lg">
-                  Software Engineer | Problem Solver | Code Enthusiast
+                <p className="terminal-green text-lg mb-4">
+                  Software Engineer | Problem Solver | Coderpreneur 
                 </p>
+                <nav className="flex flex-wrap gap-6">
+                  <a 
+                    href="#about" 
+                    className="terminal-green hover:text-[#99ff99] transition-colors duration-150 text-base decoration-transparent hover:decoration-current"
+                  >
+                    [About]
+                  </a>
+                  <a 
+                    href="#projects" 
+                    className="terminal-green hover:text-[#99ff99] transition-colors duration-150 text-base decoration-transparent hover:decoration-current"
+                  >
+                    [Projects]
+                  </a>
+                  <a 
+                    href="#skills" 
+                    className="terminal-green hover:text-[#99ff99] transition-colors duration-150 text-base decoration-transparent hover:decoration-current"
+                  >
+                    [Skills]
+                  </a>
+                  <a 
+                    href="#contact" 
+                    className="terminal-green hover:text-[#99ff99] transition-colors duration-150 text-base decoration-transparent hover:decoration-current"
+                  >
+                    [Contact]
+                  </a>
+                </nav>
               </div>
             </div>
           </div>
@@ -19,7 +46,7 @@ export default function Home() {
 
         {/* Main content */}
         <main className="space-y-12">
-          <section>
+          <section id="about">
             <h2 className="terminal-yellow text-xl mb-6 flex items-center gap-2">
               <span className="terminal-gold">{'>'}</span>
               <span className="terminal-gold">About</span>
@@ -40,7 +67,7 @@ export default function Home() {
             </div>
           </section>
 
-          <section>
+          <section id="projects">
             <h2 className="terminal-yellow text-xl mb-6 flex items-center gap-2">
               <span className="terminal-gold">{'>'}</span>
               <span className="terminal-gold">Projects</span>
@@ -78,7 +105,7 @@ export default function Home() {
             </div>
           </section>
 
-          <section>
+          <section id="skills">
             <h2 className="terminal-yellow text-xl mb-6 flex items-center gap-2">
               <span className="terminal-gold">{'>'}</span>
               <span className="terminal-gold">Skills</span>
@@ -131,7 +158,7 @@ export default function Home() {
             </div>
           </section>
 
-          <section>
+          <section id="contact">
             <h2 className="terminal-yellow text-xl mb-6 flex items-center gap-2">
               <span className="terminal-gold">{'>'}</span>
               <span className="terminal-gold">Contact</span>
@@ -166,8 +193,9 @@ export default function Home() {
 
         {/* Footer */}
         <footer className="mt-16 pt-8 border-t border-[#333]">
-          <div className="flex flex-col items-center justify-center text-center space-y-4">
-            <div className="terminal-green text-4xl font-bold">{"<"} devcoder{"/>"}</div>
+          <div className="flex flex-col justify-center space-y-4">
+            <h1 className="terminal-green text-5xl font-bold">{"<"}</h1>
+            <div className="terminal-green text-2xl font-bold">devcoder</div>
             <div className="space-y-2">
               <p className="terminal-green text-sm">
                 © 2025 devcoder | Built with ❤️ and lots of ☕️

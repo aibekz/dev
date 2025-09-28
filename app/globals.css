@@ -4,7 +4,7 @@
   --background: #0f0f23;
   --foreground: #cccccc;
   --green: #009900;
-  --yellow: #ffff66;
+  --yellow: #99ff99;
   --red: #ff6666;
   --blue: #6666ff;
   --gold: #ffaa00;
@@ -75,5 +75,4 @@ a {
 
 a:hover {
   color: var(--yellow);
-  text-decoration: underline;
 }
