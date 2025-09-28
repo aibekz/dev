@@ -11,6 +11,9 @@ const sourceCodePro = Source_Code_Pro({
 export const metadata: Metadata = {
   title: "DevCoder | devcoder.me | devcoder.xyz",
   description: "DevCoder - Crafting Code, Building Dreams. Full-Stack Developer | Open Source Enthusiast | Tech Blogger",
+  icons: {
+    icon: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({
