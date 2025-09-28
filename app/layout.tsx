@@ -9,8 +9,8 @@ const sourceCodePro = Source_Code_Pro({
 });
 
 export const metadata: Metadata = {
-  title: "DevCoder | devcoder.me | devcoder.xyz",
-  description: "DevCoder - Crafting Code, Building Dreams. Full-Stack Developer | Open Source Enthusiast | Tech Blogger",
+  title: "devcoder | devcoder.me | devcoder.xyz",
+  description: "devcoder - software engineer, problem solver, and code enthusiast.",
   icons: {
     icon: "/favicon.svg",
   },
