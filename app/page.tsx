@@ -128,6 +128,18 @@ export default function Home() {
                     devcoder.me@gmail.com
                   </a>
                 </p>
+                <p>
+                  <span className="terminal-blue">Instagram:</span> 
+                  <a href="https://instagram.com/devcoder00" target="_blank" rel="noopener noreferrer" className="ml-2 hover:text-yellow-400">
+                    @devcoder00
+                  </a>
+                </p>
+                <p>
+                  <span className="terminal-blue">Threads:</span> 
+                  <a href="https://www.threads.com/@devcoder00" target="_blank" rel="noopener noreferrer" className="ml-2 hover:text-yellow-400">
+                    @devcoder00
+                  </a>
+                </p>
               </div>
             </div>
           </section>
