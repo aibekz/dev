@@ -9,8 +9,8 @@ const sourceCodePro = Source_Code_Pro({
 });
 
 export const metadata: Metadata = {
-  title: "devcoder | devcoder.me | devcoder.xyz",
-  description: "Software development blog by Devcoder",
+  title: "DevCoder | devcoder.me | devcoder.xyz",
+  description: "DevCoder - Crafting Code, Building Dreams. Full-Stack Developer | Open Source Enthusiast | Tech Blogger",
 };
 
 export default function RootLayout({
