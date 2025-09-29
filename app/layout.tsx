@@ -10,7 +10,8 @@ const sourceCodePro = Source_Code_Pro({
 
 export const metadata: Metadata = {
   title: "DevCoder",
-  description: "DevCoder - software engineer, problem solver, and tech enthusiast.",
+  description:
+    "DevCoder - software engineer, problem solver, and tech enthusiast.",
   icons: {
     icon: "/favicon.svg",
   },
@@ -27,14 +28,15 @@ export const metadata: Metadata = {
     "technology",
     "web development",
     "frontend",
-    "backend"
-  ],  
+    "backend",
+  ],
   authors: [{ name: "DevCoder", url: "https://devcoder.me" }],
   creator: "DevCoder",
   publisher: "DevCoder",
   openGraph: {
     title: "DevCoder",
-    description: "DevCoder - software engineer, problem solver, and tech enthusiast.",
+    description:
+      "DevCoder - software engineer, problem solver, and tech enthusiast.",
     url: "https://devcoder.me",
     siteName: "DevCoder",
     images: [
@@ -44,7 +46,7 @@ export const metadata: Metadata = {
       },
     ],
   },
-}
+};
 
 export default function RootLayout({
   children,
@@ -53,9 +55,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${sourceCodePro.variable} antialiased`}
-      >
+      <body className={`${sourceCodePro.variable} antialiased`}>
         {children}
         <Analytics />
       </body>

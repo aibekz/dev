@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300');
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300");
 
 body {
   background: #0f0f23; /*337 x 5*/
@@ -8,11 +8,23 @@ body {
   font-size: 14pt;
   min-width: 60em;
 }
-img { border:0; }
-a { outline:0; }
-main, figure, figcaption { display:block; }
-pre, code { font-family: "Source Code Pro", monospace; }
-header, main {
+img {
+  border: 0;
+}
+a {
+  outline: 0;
+}
+main,
+figure,
+figcaption {
+  display: block;
+}
+pre,
+code {
+  font-family: "Source Code Pro", monospace;
+}
+header,
+main {
   -webkit-text-size-adjust: none;
 }
 
@@ -20,10 +32,12 @@ a {
   text-decoration: none;
   color: #009900;
 }
-a:hover, a:focus {
+a:hover,
+a:focus {
   color: #99ff99;
 }
-h1, h2 {
+h1,
+h2 {
   font-size: 1em;
   font-weight: normal;
 }
@@ -51,7 +65,7 @@ pre.wrap {
 }
 
 .quiet {
-  opacity: .5;
+  opacity: 0.5;
 }
 p.wrap {
   width: 45em;
@@ -61,13 +75,13 @@ p.wrap {
   border: 1px dotted gray;
   overflow: hidden;
   position: relative;
-  padding: 0 .5em;
+  padding: 0 0.5em;
   transition: border-color 0s linear 5s;
 }
 .hidden-until-hover:before {
   content: "(hover to reveal)";
   position: absolute;
-  opacity: .5;
+  opacity: 0.5;
   text-align: center;
   left: 0;
   top: 0;
@@ -94,7 +108,9 @@ p.wrap {
 }
 
 .warning:not(.warning-active) {
-  transition: color 1s, opacity 1s;
+  transition:
+    color 1s,
+    opacity 1s;
 }
 .warning-active {
   color: #ff0000;
@@ -107,7 +123,8 @@ p.wrap {
 .supporter-badge {
   color: #ffff66;
 }
-a.supporter-badge:hover, a.supporter-badge:focus {
+a.supporter-badge:hover,
+a.supporter-badge:focus {
   text-decoration: none;
   color: #ffffcc;
   text-shadow: 0 0 5px #ffff66;
@@ -115,7 +132,8 @@ a.supporter-badge:hover, a.supporter-badge:focus {
 .sponsor-badge {
   color: #79a2d8;
 }
-a.sponsor-badge:hover, a.sponsor-badge:focus {
+a.sponsor-badge:hover,
+a.sponsor-badge:focus {
   text-decoration: none;
   color: #ccdbed;
   text-shadow: 0 0 5px #79a2d8;
@@ -132,18 +150,24 @@ header h1 {
   margin: 0;
   padding-right: 1em;
 }
-header h1 a, header h1 span {
+header h1 a,
+header h1 span {
   display: inline-block;
   text-decoration: none;
   color: #00cc00;
-  text-shadow: 0 0 2px #00cc00, 0 0 5px #00cc00;
+  text-shadow:
+    0 0 2px #00cc00,
+    0 0 5px #00cc00;
 }
-header h1 a:hover, header h1 a:focus {
+header h1 a:hover,
+header h1 a:focus {
   color: #99ff99;
-  text-shadow: 0 0 2px #99ff99, 0 0 5px #99ff99;
+  text-shadow:
+    0 0 2px #99ff99,
+    0 0 5px #99ff99;
 }
 header h1.title-event .title-event-wrap {
-  opacity: .33;
+  opacity: 0.33;
   white-space: pre;
 }
 header .user {
@@ -161,7 +185,7 @@ header nav ul {
 }
 header nav li {
   display: inline-block;
-  padding: 0 .6em;
+  padding: 0 0.6em;
 }
 header nav a {
   display: inline-block;
@@ -169,7 +193,8 @@ header nav a {
   outline: none;
 }
 
-input[type="text"], textarea {
+input[type="text"],
+textarea {
   background: transparent;
   color: inherit;
   border: 1px solid #666666;
@@ -187,9 +212,11 @@ label img {
   vertical-align: bottom;
   position: relative;
   top: -3px;
-  margin-right: .3em;
+  margin-right: 0.3em;
 }
-input[type="radio"] { display: none; }
+input[type="radio"] {
+  display: none;
+}
 input[type="radio"] ~ span {
   cursor: pointer;
   display: inline-block;
@@ -197,7 +224,8 @@ input[type="radio"] ~ span {
 input[type="radio"] ~ span:before {
   content: "( ) ";
 }
-input[type="radio"] ~ span:hover, input[type="radio"] ~ span:focus {
+input[type="radio"] ~ span:hover,
+input[type="radio"] ~ span:focus {
   background-color: #19193b;
 }
 input[type="radio"]:checked ~ span {
@@ -206,7 +234,9 @@ input[type="radio"]:checked ~ span {
 input[type="radio"]:checked ~ span:before {
   content: "(O) ";
 }
-input[type="checkbox"] { display: none; }
+input[type="checkbox"] {
+  display: none;
+}
 input[type="checkbox"] ~ span {
   cursor: pointer;
   display: inline-block;
@@ -214,7 +244,8 @@ input[type="checkbox"] ~ span {
 input[type="checkbox"] ~ span:before {
   content: "[ ] ";
 }
-input[type="checkbox"] ~ span:hover, input[type="checkbox"] ~ span:focus {
+input[type="checkbox"] ~ span:hover,
+input[type="checkbox"] ~ span:focus {
   background-color: #19193b;
 }
 input[type="checkbox"]:checked ~ span {
@@ -224,7 +255,7 @@ input[type="checkbox"]:checked ~ span:before {
   content: "[X] ";
 }
 input[type="checkbox"]:disabled ~ span {
-  opacity: .3;
+  opacity: 0.3;
   cursor: default;
 }
 input[type="checkbox"]:disabled ~ span:before {
@@ -233,7 +264,6 @@ input[type="checkbox"]:disabled ~ span:before {
 input[type="checkbox"]:disabled ~ span:hover {
   background-color: transparent;
 }
-
 
 input[type="submit"] {
   background: transparent;
@@ -245,12 +275,13 @@ input[type="submit"] {
   color: #009900;
   cursor: pointer;
 }
-input[type="submit"]:hover, input[type="submit"]:focus {
+input[type="submit"]:hover,
+input[type="submit"]:focus {
   color: #99ff99;
 }
 *::-moz-focus-inner {
   padding: 0;
-  border: 0
+  border: 0;
 }
 
 article {
@@ -284,7 +315,7 @@ article a {
   white-space: nowrap;
 }
 article .aside {
-  opacity: .6;
+  opacity: 0.6;
 }
 article ul {
   list-style-type: none;
