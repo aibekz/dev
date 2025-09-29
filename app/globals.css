@@ -1,78 +1,306 @@
-@import "tailwindcss";
-
-:root {
-  --background: #0f0f23;
-  --foreground: #cccccc;
-  --green: #009900;
-  --yellow: #99ff99;
-  --red: #ff6666;
-  --blue: #6666ff;
-  --gold: #ffaa00;
-  --font-geist-sans: ui-sans-serif, system-ui, sans-serif;
-  --font-geist-mono: ui-monospace, SFMono-Regular, "SF Mono", Consolas, "Liberation Mono", Menlo, monospace;
-}
-
-* {
-  box-sizing: border-box;
-}
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300');
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: "Source Code Pro", var(--font-mono), monospace;
-  margin: 0;
-  padding: 0;
-  line-height: 1.4;
-  font-size: 14px;
+  background: #0f0f23; /*337 x 5*/
+  color: #cccccc;
+  font-family: "Source Code Pro", monospace;
+  font-weight: 300;
+  font-size: 14pt;
+  min-width: 60em;
 }
-
-.terminal-green {
-  color: var(--green);
-}
-
-.terminal-yellow {
-  color: var(--yellow);
-}
-
-.terminal-red {
-  color: var(--red);
-}
-
-.terminal-blue {
-  color: var(--blue);
-}
-
-.terminal-gold {
-  color: var(--gold);
-}
-
-.ascii-art {
-  font-family: monospace;
-  white-space: pre;
-  line-height: 1;
-  color: var(--green);
-}
-
-.code-block {
-  background: #0a0a1a;
-  border: 1px solid #333;
-  padding: 1rem;
-  margin: 1rem 0;
-  font-family: var(--font-mono);
-  border-radius: 3px;
-}
-
-.highlight {
-  background: #1a1a3a;
-  padding: 2px 4px;
-  border-radius: 2px;
+img { border:0; }
+a { outline:0; }
+main, figure, figcaption { display:block; }
+pre, code { font-family: "Source Code Pro", monospace; }
+header, main {
+  -webkit-text-size-adjust: none;
 }
 
 a {
-  color: var(--green);
   text-decoration: none;
+  color: #009900;
+}
+a:hover, a:focus {
+  color: #99ff99;
+}
+h1, h2 {
+  font-size: 1em;
+  font-weight: normal;
+}
+code {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+code:before {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  display: block;
+  left: -2px;
+  right: -2px;
+  top: 3px;
+  bottom: 0px;
+  border: 1px solid #333340;
+  background: #10101a;
+}
+pre.wrap {
+  max-width: 100%;
+  white-space: pre-wrap;
 }
 
-a:hover {
-  color: var(--yellow);
+.quiet {
+  opacity: .5;
+}
+p.wrap {
+  width: 45em;
+}
+
+.hidden-until-hover {
+  border: 1px dotted gray;
+  overflow: hidden;
+  position: relative;
+  padding: 0 .5em;
+  transition: border-color 0s linear 5s;
+}
+.hidden-until-hover:before {
+  content: "(hover to reveal)";
+  position: absolute;
+  opacity: .5;
+  text-align: center;
+  left: 0;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  transition: width 0s linear 5s;
+}
+.hidden-until-hover > * {
+  visibility: hidden;
+  transition: visibility 0s linear 5s;
+}
+.hidden-until-hover:hover {
+  transition: border-color 0s linear 1s;
+  border-color: transparent;
+}
+.hidden-until-hover:hover:before {
+  content: "( keep hovering )";
+  transition: width 0s linear 1s;
+  width: 0;
+}
+.hidden-until-hover:hover > * {
+  transition: visibility 0s linear 1s;
+  visibility: visible;
+}
+
+.warning:not(.warning-active) {
+  transition: color 1s, opacity 1s;
+}
+.warning-active {
+  color: #ff0000;
+  opacity: 1;
+}
+
+.star-count {
+  color: #ffff66;
+}
+.supporter-badge {
+  color: #ffff66;
+}
+a.supporter-badge:hover, a.supporter-badge:focus {
+  text-decoration: none;
+  color: #ffffcc;
+  text-shadow: 0 0 5px #ffff66;
+}
+.sponsor-badge {
+  color: #79a2d8;
+}
+a.sponsor-badge:hover, a.sponsor-badge:focus {
+  text-decoration: none;
+  color: #ccdbed;
+  text-shadow: 0 0 5px #79a2d8;
+}
+
+header {
+  white-space: nowrap;
+  cursor: default;
+  z-index: 100;
+  margin-bottom: 2em;
+}
+header h1 {
+  display: inline-block;
+  margin: 0;
+  padding-right: 1em;
+}
+header h1 a, header h1 span {
+  display: inline-block;
+  text-decoration: none;
+  color: #00cc00;
+  text-shadow: 0 0 2px #00cc00, 0 0 5px #00cc00;
+}
+header h1 a:hover, header h1 a:focus {
+  color: #99ff99;
+  text-shadow: 0 0 2px #99ff99, 0 0 5px #99ff99;
+}
+header h1.title-event .title-event-wrap {
+  opacity: .33;
+  white-space: pre;
+}
+header .user {
+  display: inline-block;
+  padding-left: 1em;
+}
+header nav {
+  display: inline-block;
+}
+header nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+}
+header nav li {
+  display: inline-block;
+  padding: 0 .6em;
+}
+header nav a {
+  display: inline-block;
+  text-decoration: none;
+  outline: none;
+}
+
+input[type="text"], textarea {
+  background: transparent;
+  color: inherit;
+  border: 1px solid #666666;
+  background: #10101a;
+  padding: 0 2px;
+  font-family: inherit;
+  font-size: inherit;
+  margin: 0;
+}
+textarea {
+  vertical-align: top;
+}
+
+label img {
+  vertical-align: bottom;
+  position: relative;
+  top: -3px;
+  margin-right: .3em;
+}
+input[type="radio"] { display: none; }
+input[type="radio"] ~ span {
+  cursor: pointer;
+  display: inline-block;
+}
+input[type="radio"] ~ span:before {
+  content: "( ) ";
+}
+input[type="radio"] ~ span:hover, input[type="radio"] ~ span:focus {
+  background-color: #19193b;
+}
+input[type="radio"]:checked ~ span {
+  color: #ffffff;
+}
+input[type="radio"]:checked ~ span:before {
+  content: "(O) ";
+}
+input[type="checkbox"] { display: none; }
+input[type="checkbox"] ~ span {
+  cursor: pointer;
+  display: inline-block;
+}
+input[type="checkbox"] ~ span:before {
+  content: "[ ] ";
+}
+input[type="checkbox"] ~ span:hover, input[type="checkbox"] ~ span:focus {
+  background-color: #19193b;
+}
+input[type="checkbox"]:checked ~ span {
+  color: #ffffff;
+}
+input[type="checkbox"]:checked ~ span:before {
+  content: "[X] ";
+}
+input[type="checkbox"]:disabled ~ span {
+  opacity: .3;
+  cursor: default;
+}
+input[type="checkbox"]:disabled ~ span:before {
+  content: "[-] ";
+}
+input[type="checkbox"]:disabled ~ span:hover {
+  background-color: transparent;
+}
+
+
+input[type="submit"] {
+  background: transparent;
+  border: 0;
+  font-family: inherit;
+  font-size: inherit;
+  margin: 0;
+  padding: 0;
+  color: #009900;
+  cursor: pointer;
+}
+input[type="submit"]:hover, input[type="submit"]:focus {
+  color: #99ff99;
+}
+*::-moz-focus-inner {
+  padding: 0;
+  border: 0
+}
+
+article {
+  width: 45em;
+  margin-bottom: 2em;
+  margin-top: 2em;
+}
+article:first-of-type {
+  margin-top: 0;
+}
+article h2 {
+  color: #ffffff;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  white-space: nowrap;
+}
+article h2 + * {
+  margin-top: 0;
+}
+article em {
+  color: #ffffff;
+  font-style: normal;
+  text-shadow: 0 0 5px #ffffff;
+}
+article em.star {
+  color: #ffff66;
+  font-style: normal;
+  text-shadow: 0 0 5px #ffff66;
+}
+article a {
+  white-space: nowrap;
+}
+article .aside {
+  opacity: .6;
+}
+article ul {
+  list-style-type: none;
+  padding: 0;
+}
+article li {
+  padding-left: 2.5em;
+  position: relative;
+}
+article li:before {
+  content: "\00a0\00a0-\00a0";
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.day-success {
+  color: #ffff66;
+  text-shadow: 0 0 5px #ffff66;
 }

@@ -9,12 +9,42 @@ const sourceCodePro = Source_Code_Pro({
 });
 
 export const metadata: Metadata = {
-  title: "devcoder | devcoder.me | devcoder.xyz",
-  description: "devcoder - software engineer, problem solver, and code enthusiast.",
+  title: "DevCoder",
+  description: "DevCoder - software engineer, problem solver, and tech enthusiast.",
   icons: {
     icon: "/favicon.svg",
   },
-};
+  keywords: [
+    "devcoder",
+    "devCoder",
+    "DevCoder",
+    "Devcoder",
+    "developer",
+    "software developer",
+    "full-stack developer",
+    "programmer",
+    "coding",
+    "technology",
+    "web development",
+    "frontend",
+    "backend"
+  ],  
+  authors: [{ name: "DevCoder", url: "https://devcoder.me" }],
+  creator: "DevCoder",
+  publisher: "DevCoder",
+  openGraph: {
+    title: "DevCoder",
+    description: "DevCoder - software engineer, problem solver, and tech enthusiast.",
+    url: "https://devcoder.me",
+    siteName: "DevCoder",
+    images: [
+      {
+        url: "/favicon.svg",
+        alt: "DevCoder",
+      },
+    ],
+  },
+}
 
 export default function RootLayout({
   children,
