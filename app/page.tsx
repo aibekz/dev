@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <div className="min-h-screen bg-[#0f0f23] text-[#cccccc] font-mono text-sm leading-relaxed">
-      <div className="max-w-5xl mx-auto p-6 lg:p-8">
+      <div className="max-w-3xl mx-auto p-6 lg:p-8">
         <header className="mb-12">
           <div className="border-b border-[#333] pb-6">
             <div className="flex items-center gap-4 mb-6">
@@ -72,7 +72,7 @@ export default function Home() {
               <span className="terminal-gold">{'>'}</span>
               <span className="terminal-gold">Projects</span>
             </h2>
-            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            <div className="grid gap-6">
               <div className="code-block bg-[#1a1a2e] border border-[#333] rounded-lg p-6 hover:border-[#555] transition-colors">
                 <h3 className="terminal-blue mb-3 text-lg font-semibold">🧩 Algorithm Solutions</h3>
                 <p className="mb-4 text-sm leading-relaxed">
@@ -93,7 +93,7 @@ export default function Home() {
                 </p>
               </div>
               
-              <div className="code-block bg-[#1a1a2e] border border-[#333] rounded-lg p-6 hover:border-[#555] transition-colors md:col-span-2 lg:col-span-1">
+              <div className="code-block bg-[#1a1a2e] border border-[#333] rounded-lg p-6 hover:border-[#555] transition-colors">
                 <h3 className="terminal-blue mb-3 text-lg font-semibold">🔧 Developer Tools</h3>
                 <p className="mb-4 text-sm leading-relaxed">
                   Productivity tools and utilities for fellow developers
