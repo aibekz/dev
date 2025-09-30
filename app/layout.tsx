@@ -55,7 +55,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${sourceCodePro.variable} antialiased`}>
+      <body className={`${sourceCodePro.variable} antialiased text-sm md:text-base lg:text-lg min-w-0 md:min-w-[60em] px-3 md:px-0`}>
         {children}
         <Analytics />
       </body>

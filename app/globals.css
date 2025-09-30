@@ -1,12 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300");
+@import "tailwindcss";
 
 body {
   background: #0f0f23; /*337 x 5*/
   color: #cccccc;
-  font-family: "Source Code Pro", monospace;
+  font-family: var(--font-source-code-pro), "Source Code Pro", monospace;
   font-weight: 300;
-  font-size: 14pt;
-  min-width: 60em;
 }
 img {
   border: 0;
@@ -21,7 +19,7 @@ figcaption {
 }
 pre,
 code {
-  font-family: "Source Code Pro", monospace;
+  font-family: var(--font-source-code-pro), "Source Code Pro", monospace;
 }
 header,
 main {
@@ -66,9 +64,6 @@ pre.wrap {
 
 .quiet {
   opacity: 0.5;
-}
-p.wrap {
-  width: 45em;
 }
 
 .hidden-until-hover {
@@ -139,20 +134,9 @@ a.sponsor-badge:focus {
   text-shadow: 0 0 5px #79a2d8;
 }
 
-header {
-  white-space: nowrap;
-  cursor: default;
-  z-index: 100;
-  margin-bottom: 2em;
-}
-header h1 {
-  display: inline-block;
-  margin: 0;
-  padding-right: 1em;
-}
+/* Header styles - only preserve visual effects, not layout */
 header h1 a,
 header h1 span {
-  display: inline-block;
   text-decoration: none;
   color: #00cc00;
   text-shadow:
@@ -170,29 +154,8 @@ header h1.title-event .title-event-wrap {
   opacity: 0.33;
   white-space: pre;
 }
-header .user {
-  display: inline-block;
-  padding-left: 1em;
-}
-header nav {
-  display: inline-block;
-}
-header nav ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  display: inline-block;
-}
-header nav li {
-  display: inline-block;
-  padding: 0 0.6em;
-}
-header nav a {
-  display: inline-block;
-  text-decoration: none;
-  outline: none;
-}
 
+/* Form styles */
 input[type="text"],
 textarea {
   background: transparent;
@@ -284,22 +247,10 @@ input[type="submit"]:focus {
   border: 0;
 }
 
-article {
-  width: 45em;
-  margin-bottom: 2em;
-  margin-top: 2em;
-}
-article:first-of-type {
-  margin-top: 0;
-}
+/* Article styles - only preserve visual effects, not layout */
 article h2 {
   color: #ffffff;
-  margin-top: 1em;
-  margin-bottom: 1em;
   white-space: nowrap;
-}
-article h2 + * {
-  margin-top: 0;
 }
 article em {
   color: #ffffff;
@@ -317,20 +268,21 @@ article a {
 article .aside {
   opacity: 0.6;
 }
-article ul {
+
+/* Custom list styles - only for visual bullets, not layout */
+.custom-list {
   list-style-type: none;
-  padding: 0;
 }
-article li {
-  padding-left: 2.5em;
+.custom-list li {
   position: relative;
 }
-article li:before {
+.custom-list li:before {
   content: "\00a0\00a0-\00a0";
   position: absolute;
   left: 0;
   top: 0;
 }
+
 .day-success {
   color: #ffff66;
   text-shadow: 0 0 5px #ffff66;
