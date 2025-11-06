@@ -10,6 +10,7 @@ export default function Home() {
    <p>I build things that (sometimes) work.</p>
    <p>If you’re in tech, let’s connect.</p>
       <p>
+        <br />
         <Link href="/contact">Contact</Link>
       </p>
     </div>
