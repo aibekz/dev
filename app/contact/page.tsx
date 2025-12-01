@@ -5,7 +5,6 @@ export default function Contact() {
     <div id="maincontent">
       <h1>Contact</h1>
       <p>For all inquiries please email me at <a href="mailto:devcoder.me@gmail.com">devcoder.me@gmail.com</a></p>
-      <p>On the web: @devcoder_01</p>
       <p>
         <Link href="/">Back</Link>
       </p>
