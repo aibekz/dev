@@ -4,11 +4,8 @@ import { Globe } from "lucide-react";
 export default function Home() {
   return (
     <div id="maincontent">
-    <h1>Hello, World.</h1>
-    <p>It's Devcoder, a Software Engineer</p>
-    <p>I run on caffeine and curiosity.</p>
-    <p>I build things that (sometimes) work.</p>
-    <p>If you're in tech, let's connect.</p>
+    <h1>Hey, It's Devcoder.</h1>
+    <p>Prompt Engineer based in San Francisco, CA.</p>
     <br />
     <div style={{ display: "flex", alignItems: "center", gap: "8px", marginTop: "8px" }}>
       <Globe size={16} />
